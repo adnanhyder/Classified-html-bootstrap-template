@@ -56,4 +56,4 @@ Maida Classified
 
   <p>Note: All photos are for preview only and are not included in the package.</p>
 
-if you find some issue please report <a href="http://helpyea.com">Here</a>
+if you find some issue please report <a href="https://helpyea.com">Here</a>
