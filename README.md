@@ -1,6 +1,7 @@
 # Maida
 
 Maida Classified
+<img src="https://raw.githubusercontent.com/adnanhyder/classified-html-bootstrap/master/img/logo.png">
  Maida Classified Template is designed &amp; developed using Bootstrap 4, jQuery. It’s code ready to use and well commented,it uses all free MIT licences So that you can integrate it with any CMS / Core Websites.
 
   A fully featured Classified style HTML template for creating stunning listings websites.
