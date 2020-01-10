@@ -1,0 +1,573 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <title>Maida Responsive Classified</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/fav.png" type="image/gif" sizes="16x16">
+<style>
+    .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 999999;
+    text-align: center;
+  }
+  .logocolor {
+    color: #A46FBF !important;
+  }
+  .centercenter {
+    position: relative;
+    top: 50%;
+  }
+  .spinner-grow2 {
+    display: inline-block;
+    width: 100px !important;
+    height: 100px !important;
+    vertical-align: text-bottom;
+    background-color: currentColor;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-animation: spinner-grow .75s linear infinite;
+    animation: spinner-grow .75s linear infinite;
+  }
+  </style>
+</head>
+<body>
+<div class="spinner-wrapper">
+  <div class="centercenter">
+    <div class="spinner-grow2 logocolor" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+</div>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<header class="background-header">
+
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="icon-top text-center text-sm-center text-md-left text-lg-left text-xl-left">
+                <div class="icons">
+                  <a href="#"> <i class="fa fa-facebook"></i> </a>
+                </div>
+                <div class="icons">
+                  <a href="#"> <i class="fa fa-twitter"></i> </a>
+                </div>
+                <div class="icons">
+                  <a href="#"> <i class="fa fa-youtube-play"></i></a>
+                </div>
+                <div class="icons">
+                  <a href="#"> <i class=" fa fa-pinterest"></i></a>
+                </div>
+                <div class="icons">
+                  <a href="#"> <i class=" fa fa-instagram"></i></a>
+                </div>
+                <div class="icons">
+                  <a href="#"> <i class=" fa fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="text-center text-sm-center text-md-right text-lg-right text-xl-right">
+                <div class="toplocation text-white">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span class="locaitonfont">Location</span>
+
+                  <select id="openonarrow">
+                    <option>United States of America</option>
+                    <option>United Arab Emirates</option>
+                    <option>United Kingdom</option>
+                    <option>Australia</option>
+                    <option>Japan</option>
+                    <option>India</option>
+                    <option>Pakistan</option>
+                    <option>Oman</option>
+                  </select>
+
+                  <span class="arrowdonwing">
+                    <i class="fa fa-angle-down"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navigation">
+      <nav class="navbar navbar-expand-lg   justify-content-between nav-color zeropadd">
+        <div class="navbar-header ">
+          <a class="navbar-brand zeropadd" href="index.html">
+            <img src="img/logo_200x200.png" alt="logo" class="max-width-60px"/>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="category.html">Advance Search</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                 class="nav-link dropdown-toggle">Categories <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu border-0 shadow">
+                <li><a href="category.html" class="dropdown-item">Jobs </a></li>
+                <li><a href="category.html" class="dropdown-item">Properties</a></li>
+                <!-- Level two dropdown-->
+                <li class="dropdown-submenu">
+                  <a href="category.html" role="button" data-toggle="dropdown" aria-haspopup="true"
+                     aria-expanded="false"
+                     class="dropdown-item dropdown-toggle">Phones</a>
+                  <ul class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a tabindex="-1" href="category.html" class="dropdown-item">Apple</a>
+                    </li>
+                    <li><a href="category.html" class="dropdown-item">Samsung</a></li>
+                    <li><a href="category.html" class="dropdown-item">LG</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a href="category.html" role="button" data-toggle="dropdown" aria-haspopup="true"
+                     aria-expanded="false"
+                     class="dropdown-item dropdown-toggle">Cars</a>
+                  <ul class="dropdown-menu border-0 shadow">
+                    <li>
+                      <a tabindex="-1" href="category.html" class="dropdown-item">Toyota</a>
+                    </li>
+                    <li><a href="category.html" class="dropdown-item">Suzuki</a></li>
+                    <li><a href="category.html" class="dropdown-item">Honda</a></li>
+                  </ul>
+                </li>
+                <li><a href="category.html" class="dropdown-item">Rent</a></li>
+                <li><a href="category.html" class="dropdown-item">Serviecs</a></li>
+
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                 class="nav-link dropdown-toggle">Pages <i class="fa fa-angle-down"></i></a>
+              <ul class="dropdown-menu border-0 shadow">
+                <li><a href="aboutus.html" class="dropdown-item">About</a></li>
+                <li><a href="blog.html" class="dropdown-item">Blog</a></li>
+                <li><a href="contactus.html" class="dropdown-item">Contact Us</a></li>
+                <li><a href="faq.html" class="dropdown-item">Faq</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="loginRegister.html"><i class="fa fa-user" aria-hidden="true"></i>Login / Register</a>
+            </li>
+            <li class="nav-item  bordering">
+              <a class="nav-link" href="postad.html">Post Free Ad</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</header>
+<div class="content blog">
+  <div class="hero-homepage subpage">
+    <div class="container wrapping-content">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="tagline">
+            <h1></h1>
+            <h2>Where Comes Quality</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Post section-->
+  <div class="post-section blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Products</li>
+            </ol>
+          </nav>
+          <h2 class="styleh2 karma margin_10px">Iphone 6s 16GB Unlocked No Country Code </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-xs-12">
+          <div id="productcarosal" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner height-adjust">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/bmw-1313343_640.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/bmw-1313343_640.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/bicycle-1209682_640.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev coloring" href="#productcarosal" role="button" data-slide="prev">
+              <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next coloring" href="#productcarosal" role="button" data-slide="next">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-xs-12 first-height">
+          <div class="boxwedigt margin_10px ">
+            <div class="text-center">
+              <h4><i class="fa fa-dollar"></i> <span class="karma">150,000</span></h4>
+
+              <p class="margin_10px"><a href="#"><i class="fa fa-list-alt"></i> Cars</a></p>
+              <div class="share-items">
+                <div class="meta">
+                  <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> </a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxwedigt margin_10px ">
+            <div class="text-center">
+              <h4><a href="#"><i class="fa fa-user"></i> <span class="karma">Maida Thems</span></a></h4>
+              <img src="img/logo.png" class="rounded-circle square-height max-width-50px margin_10px">
+              <div class="clearfix"></div>
+              <a class="custom-button"><i class="fa fa-send"></i> Chat With Seller</a>
+              <p class="margin_10px mb-0"><a href="tel:#"><strong><i class="fa fa-phone"></i> 0123-12345678</strong></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-xs-12">
+          <div class="post-content-wrapper bg-white">
+            <div class="entry-summary boxwedigt ">
+              <div class="row">
+                <div class="col-sm-3 col-6 col-md-3">
+                  <a href="#"><strong>Country</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#">United Kingdom</a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#"><strong>State</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#">London</a>
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-sm-3 col-6 col-md-3">
+                  <a href="#"><strong>Make</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#">Suzuki</a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#"><strong>Model</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#">Wagon R</a>
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-sm-3 col-6 col-md-3">
+                  <a href="#"><strong>Year</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#">2016</a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#"><strong>Condition</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#">Used</a>
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-sm-3 col-6 col-md-3">
+                  <a href="#"><strong>Transmission</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#">Automatic</a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#"><strong>Registered</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#">Yes</a>
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-sm-3 col-6 col-md-3">
+                  <a href="#"><strong>Down Payment</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#"> 210,000</a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#"><strong>Monthly Installment</strong></a>
+
+                </div>
+                <div class="col-sm-3  col-6 col-md-3">
+                  <a href="#">9766</a>
+
+                </div>
+
+              </div>
+            </div>
+            <div class="entry-summary">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi qui fuga quam hic
+                possimus nihil iure assumenda odio at reprehenderit magni debitis cupiditate quidem nobis
+                <strong>Helvetica</strong> repellendus doloribus, rerum aut in! Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Molestias repellat autem accusantium cupiditate animi
+                consectetur. Beatae quia labore, sunt fugit accusantium. Deleniti excepturi ducimus error,
+                ipsam voluptates eius sint odio!</p>
+              <p>Lorem ipsum dolor sit amet, <strong>consectetuer</strong> adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+                veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+                commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+                feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil
+                imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem
+                insitam; est usus legentis in iis qui facit eorum claritatem.
+                <strong>Investigationes</strong> demonstraverunt lectores legere me lius quod ii legunt
+                saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram</p>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                consequat.</p>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-xs-12">
+          <div class="category-container">
+            <h2 class="text-center styleh2 karma"><a class="greens" href="#">Recent Ads</a></h2>
+            <ul class="posts-list recentadsright">
+              <li class="row">
+                <div class="widget-thumb col-sm-4 col-lg-4 col-md-4 col-xl-4 col-12">
+                  <a href="#"><img src="img/pug-801826_640.jpg" alt=""></a>
+                </div>
+                <div class="widget-content col-sm-8 col-lg-8 col-md-8 col-xl-8 col-12">
+                  <a href="#">Eum Iriure Dolor Du..</a>
+                  <span class="col-6"><i class="fa fa-list-alt"></i>Books</span>
+                  <span class="col-6"><i class="fa fa-dollar"></i>25,000</span>
+                </div>
+              </li>
+              <li class="row">
+                <div class="widget-thumb col-sm-4 col-lg-4 col-md-4 col-xl-4 col-12">
+                  <a href="#"><img src="img/vegetables-1584999_640.jpg" alt=""></a>
+                </div>
+                <div class="widget-content col-sm-8 col-lg-8 col-md-8 col-xl-8 col-12">
+                  <a href="#">Consectetuer Adipisci..</a>
+                  <span class="col-6"><i class="fa fa-list-alt"></i>Cars</span>
+                  <span class="col-6"><i class="fa fa-dollar"></i>21,000</span>
+                </div>
+              </li>
+              <li class="row">
+                <div class="widget-thumb col-sm-4 col-lg-4 col-md-4 col-xl-4 col-12">
+                  <a href="#"><img src="img/home-office-336374_640.jpg" alt=""></a>
+                </div>
+                <div class="widget-content col-sm-8 col-lg-8 col-md-8 col-xl-8 col-12">
+                  <a href="#">Consectetuer Exercitati..</a>
+                  <span class="col-6"><i class="fa fa-list-alt"></i>Property</span>
+                  <span class="col-6"><i class="fa fa-dollar"></i>21,000K</span>
+                </div>
+              </li>
+              <li class="row">
+                <div class="widget-thumb col-sm-4 col-lg-4 col-md-4 col-xl-4 col-12">
+                  <a href="#"><img src="img/bicycle-1209682_640.jpg" alt=""></a>
+                </div>
+                <div class="widget-content col-sm-8 col-lg-8 col-md-8 col-xl-8 col-12">
+                  <a href="#">Consectetuer Exercitati..</a>
+                  <span class="col-6"><i class="fa fa-list-alt"></i>Property</span>
+                  <span class="col-6"><i class="fa fa-dollar"></i>50.0M</span>
+                </div>
+              </li>
+
+              <li class="row">
+                <div class="widget-thumb col-sm-4 col-lg-4 col-md-4 col-xl-4 col-12">
+                  <a href="#"><img src="img/hedgehog-468228_640.jpg" alt=""></a>
+                </div>
+                <div class="widget-content col-sm-8 col-lg-8 col-md-8 col-xl-8 col-12">
+                  <a href="#">Exercitation Adipisc..</a>
+                  <span class="col-6"><i class="fa fa-list-alt"></i>NGO</span>
+                  <span class="col-6"><i class="fa fa-dollar"></i>Free</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer-->
+<footer>
+  <!--Newsletter section-->
+  <div class="newsletter">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <h2>Newsletter</h2>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <p>Sign up to receive email updates on new recipes.</p>
+        </div>
+        <div class="col-lg-5 col-md-12">
+          <form>
+            <div class="col-sm-12">
+              <div class="row zeromargin zeromargin_form_group">
+                <div class="form-group col-lg-8 col-sm-12">
+                  <input type="email" class="form-control" placeholder="Your email address here...">
+                </div>
+                <div class="form-group col-lg-4 col-sm-12">
+                  <button type="submit" class="whitehover custom-button">Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background-header footer_padding">
+    <div class="container">
+      <div class="navigation_footer">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="about-us-info">
+              <p>
+                <img src="img/logo_200x200.png" class="max-width-100px" alt="logo"/>
+              </p>
+              <p><i class="fa fa-phone"></i> 123-456-987</p>
+              <p><i class="fa fa-map-marker"></i> 123 Street Infront of Macdonald, <br>
+                Kingsman, United States</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h3>Popular Categories</h3>
+            <ul>
+              <li><a href="category.html">Properties</a></li>
+              <li><a href="category.html">Jobs</a></li>
+              <li><a href="category.html">Phones</a></li>
+              <li><a href="category.html">Cars</a></li>
+              <li><a href="category.html">Rent</a></li>
+              <li><a href="category.html">Electronics</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h3>Location</h3>
+            <ul>
+              <li><a href="#">London</a></li>
+              <li><a href="#">Barcelona</a></li>
+              <li><a href="#">New York</a></li>
+              <li><a href="#">France</a></li>
+              <li><a href="#">Lahore</a></li>
+              <li><a href="#">Mumbai</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h3>Important Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About</a></li>
+              <li><a href="contactus.html">Contact Us</a></li>
+              <li><a href="#">Login</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="faq.html">Faqs</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 zeropadd">
+                <p>2019 Maida Themes. copyright @ 2016 - 2019 Powered By <i class="fa fa-heart"></i>
+                  <a href="#" class="greens">Maida</a>
+                </p>
+              </div>
+              <div class="col-md-6 zeropaddon768">
+                <ul class="pages-links zeropadd">
+                  <li><a href="#">Terms &amp; Condition</a></li>
+                  <li><a href="dashboard.html">Dashboard</a></li>
+                  <li><a href="#">Privacy Policy </a></li>
+                  <li><a href="#">About Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/vendor/jquery-3.4.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

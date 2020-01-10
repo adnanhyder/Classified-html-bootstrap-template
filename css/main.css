@@ -1,0 +1,1501 @@
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ======================================================================== */
+a {
+	text-decoration: none !important;
+}
+
+/* devanagari */
+@font-face {
+	font-family: 'Karma';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Karma Regular'), local('Karma-Regular'), url('fonts/va9I4kzAzMZRGLBpQeNHkQ.woff2') format('woff2');
+	unicode-range: U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+
+/* latin-ext */
+@font-face {
+	font-family: 'Karma';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Karma Regular'), local('Karma-Regular'), url('fonts/va9I4kzAzMZRGLBmQeNHkQ.woff2') format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+	font-family: 'Karma';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Karma Regular'), local('Karma-Regular'), url('fonts/va9I4kzAzMZRGLBoQeM.woff2') format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+html {
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+::selection {
+	background: #b3d4fc;
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+	display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+	border: 0;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	/* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: inherit;
+	width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+	/* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+	/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		/* Black prints faster */
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+		 * Don't show links that are fragment identifiers,
+		 * or use the `javascript:` pseudo protocol
+		 */
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
+
+	pre {
+		white-space: pre-wrap !important;
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	/*
+		 * Printing Tables:
+		 * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+		 */
+	thead {
+		display: table-header-group;
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}
+
+
+/* ==========================================================================
+   Hovers Section
+   ========================================================================== */
+.whitehover.custom-button:hover {
+	color: #000;
+	background: #a46fbf;
+}
+
+.popular_searches a:hover {
+	color: #fff;
+
+}
+
+.nav-link:hover {
+	color: #8fb249;
+}
+
+.icon-top a:hover {
+	color: #8fb249;
+}
+
+.post-section .container .row img:hover {
+	padding: 2px 2px;
+}
+
+.post-section .container .row .masonry.mansoryitem img:hover {
+	transition: .4s;
+	transform-origin: center;
+	transform: scale(1.04);
+	padding: unset;
+}
+
+/* ==========================================================================
+   Header Section
+   ========================================================================== */
+
+
+.background-header {
+	background-color: #3c3241;
+}
+
+.max-width-78px {
+	max-width: 78px;
+}
+
+.nav-color a {
+	color: #ffffff;
+}
+
+.zeropadd {
+	padding: 0 !important;
+}
+
+.nav-item {
+	margin: 0px 13px;
+}
+
+.nav-link i {
+	margin: 0 10px;
+	margin-left: 0px;
+}
+
+.bordering {
+	border: 1px dotted #fff;
+}
+
+.bordering {
+	background: #a46fbf;
+}
+
+.bordering:hover {
+	background: #000;
+}
+
+.navigation .fa.fa-angle-down {
+	margin: 0;
+}
+
+.navigation .dropdown-toggle::after {
+	content: unset;
+}
+
+.nav-color .dropdown-menu a {
+	color: #fff;
+
+}
+
+.navigation .dropdown-menu li {
+	border-bottom: 1px solid;
+	padding: 0px;
+}
+
+.nav-color .dropdown-menu a:focus {
+	color: #8fb249;
+}
+
+.navigation .dropdown-menu {
+
+	background-color: black;
+	padding: 0px;
+}
+
+.navigation .dropdown-submenu:hover ul {
+	display: block;
+}
+
+.icon-top .icons {
+	display: inline-block;
+	margin: 14px;
+	margin-left: 0;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+.nav-color .dropdown-menu a:hover {
+	color: #8fb249;
+}
+
+.icon-top a {
+	color: #fff;
+}
+
+.topbar {
+	background: black;
+}
+
+.navigation .dropdown-submenu {
+	position: relative;
+}
+
+.navigation .dropdown-submenu > a:after {
+	content: "\f105";
+	float: right;
+	border: none;
+	font-family: 'FontAwesome';
+}
+
+.navigation .dropdown-submenu > .dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+
+.toplocation select {
+	background: transparent;
+	border: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	max-width: 200px;
+	border: none;
+	color: #8fb249;
+}
+
+.toplocation select option {
+	margin: 40px;
+	background: #000;
+	color: #ffff;
+	text-shadow: none;
+	border: none !important;
+}
+
+.toplocation .fa.fa-angle-down {
+	position: relative;
+	margin-bottom: -15px;
+	bottom: 18px;
+	left: -15px;
+	top: -24px;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+.custom-button:hover {
+	background: black;
+	color: #fff;
+}
+
+.arrowdonwing {
+	display: block;
+	margin-bottom: -15px;
+	cursor: pointer;
+}
+
+.max-width-60px {
+	max-width: 60px;
+}
+
+.navigation {
+	padding: 5px 0px;
+}
+
+.locaitonfont {
+	font-size: 13.2px;
+	font-weight: bold;
+}
+
+.bordering {
+	margin-right: 0px;
+}
+
+.down {
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.bordering a:hover {
+	color: #fff;
+}
+
+/* ==========================================================================
+   Banner Section
+   ========================================================================== */
+
+.tagline {
+	font-family: 'Karma', serif;
+	color: #fff;
+}
+
+/* ==========================================================================
+   Banner variable for background
+   ========================================================================== */
+:root {
+	--banner_color: rgba(0, 0, 0, .62);
+	--banner_color2: rgba(0, 0, 0, .62);
+	--url: url(../img/banner.jpg);
+}
+
+
+.hero-homepage {
+
+	background: linear-gradient(to right, var(--banner_color), var(--banner_color2)), var(--url);
+	background-size: cover;
+}
+
+.search_form {
+	background: #fff;
+	color: #fff !important;
+	padding: 15px;
+
+}
+
+.search_form .row > div {
+	padding: 0px 20px;
+	margin: 0;
+}
+
+.custom-button {
+	background: #a46fbf;
+	border: none;
+	width: 100%;
+	padding: 7px;
+	color: #fff;
+}
+
+.popular_searches {
+	color: #fff;
+	padding: 20px 0px;
+}
+
+.popular_searches a {
+	color: #a46fbf;
+	letter-spacing: 0px;
+	padding: 5px;
+}
+
+.tagline h1 {
+	font-size: 4.5rem;
+}
+
+.tagline h2 {
+	font-size: 2.5rem;
+}
+
+.wrapping-content {
+	position: relative;
+	padding: 109px 0px;
+}
+
+.wrapping-content .row {
+	margin: 0 !important;
+}
+
+
+/* ==========================================================================
+   News Letter Section
+   ========================================================================== */
+.newsletter {
+	background: #040000;
+	padding: 15px 0;
+}
+
+.newsletter h2 {
+
+	font-size: 36px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	margin: 1px 0 0 0;
+	font-family: 'Karma', serif;
+}
+
+.newsletter p {
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+	border-left: 1px solid rgba(255, 255, 255, 0.3);
+	padding: 10px 0 15px 26px;
+	margin: 0;
+}
+
+.zeromargin .form-group {
+	margin-bottom: 0;
+}
+
+/* ==========================================================================
+   Category section
+   ========================================================================== */
+
+.cat-icons .mainicon i::before {
+	font-size: 34px;
+	position: relative;
+	top: 5px;
+}
+
+.cat-icons .mainicon {
+	font-size: 38px;
+	display: inline-block;
+	padding: 0px 5px;
+	cursor: pointer;
+}
+
+.mainicon i {
+	height: 32px;
+	width: 100px;
+}
+
+.category-container {
+	padding: 20px 0px;
+}
+
+.cat-icons a div:hover {
+	color: #8fb249;
+}
+
+.karma {
+	font-family: 'Karma', serif;
+}
+
+.styleh2 {
+	font-size: 36px;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+	margin: 1px 0 0 0;
+	font-family: 'Karma', serif;
+	padding-bottom: 20px;
+}
+
+.mainicon::before {
+	float: left;
+	width: 100%;
+}
+
+.text-icon {
+	font-size: 16px;
+	position: relative;
+	top: -20px;
+	margin-bottom: -20px;
+}
+
+.cat-icons a {
+	display: inline-block;
+	color: #A46FBF;
+	width: 100px;
+	cursor: auto;
+	text-align: center;
+	height: 73px;
+}
+
+.cat-icons {
+	text-align: center;
+}
+
+
+/* ==========================================================================
+   Post Section
+   ========================================================================== */
+
+.tagline {
+	font-family: 'Karma', serif;
+	color: #fff;
+}
+
+.post-box img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #fff;
+}
+
+.post-box {
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.thumbnail-holder img {
+	margin: 0 auto;
+}
+
+.post-section {
+	background: #F2F2F2;
+	padding: 20px 0px;
+}
+
+.user-name {
+	float: left;
+	width: 50%;
+}
+
+.post-box-content {
+	text-align: left;
+	padding: 10px;
+	background: #fff;
+	padding-top: 0px;
+}
+
+.user_img {
+	max-width: 21px;
+	float: left;
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.post-category {
+	float: left;
+	width: 100%;
+	max-width: 40%;
+}
+
+.post-meta {
+	float: left;
+	text-align: right;
+	width: 100%;
+	max-width: 20%;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.post-location {
+	float: left;
+	text-align: left;
+	width: 100%;
+	max-width: 40%;
+}
+
+.thumbnail-holder img {
+	height: 230px;
+	object-fit: cover;
+}
+
+.post-box-content a {
+	color: #616161;
+	text-transform: uppercase;
+	font-size: 11px;
+}
+
+.post-box-content h3 a {
+	text-align: center;
+	font-size: 18px;
+}
+
+.post-box-content h3 {
+	text-align: center;
+
+}
+
+.margin_10px {
+	margin: 15px 0px;
+}
+
+/* ==========================================================================
+   Footer Section
+   ========================================================================== */
+
+
+footer {
+	color: #fff;
+
+}
+
+.footer_padding {
+	padding: 20px 0px;
+}
+
+footer h3 {
+	font-family: 'Karma', serif;
+}
+
+.max-width-100px {
+	width: 100px;
+}
+
+.navigation_footer ul {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation_footer ul li a {
+	list-style: none;
+	padding: 0;
+	color: #a2a2a2;
+}
+
+.navigation_footer ul li a:hover {
+
+	color: #fff;
+}
+
+.pages-links li {
+	display: inline-block;
+
+	margin-right: 20px;
+}
+
+.pages-links {
+	text-align: right;
+}
+
+.pages-links li:last-child {
+
+	margin-right: 0;
+}
+
+.footer-bottom i {
+	margin: 0px 5px;
+}
+
+.greens {
+	color: #8fb249;
+}
+
+
+/* ==========================================================================
+   All Ads Page
+   ========================================================================== */
+
+
+p {
+	margin-bottom: 0;
+}
+
+.subpage .wrapping-content {
+
+	padding: 40px 0px;
+}
+
+.breadcrumb {
+	background: transparent;
+	padding: 0;
+	margin: 0;
+}
+
+.pagination {
+
+	margin: 0 auto;
+}
+
+.page-link {
+	background: black;
+	color: #fff;
+}
+
+.pagination .page-item.disabled a {
+	background-color: #a46fbf;
+	color: #fff;
+}
+
+.page-link.active-pagination {
+	color: #8fb249;
+
+	pointer-events: none;
+}
+
+
+/* ==========================================================================
+   Search Ads Page
+   ========================================================================== */
+
+
+.search-adjust .form-group {
+	margin: 10px 0px !important;
+}
+
+.rangeslider label {
+	color: black;
+	display: inline-block;
+}
+
+.showprice {
+	color: black;
+	text-align: left;
+	padding: 0;
+}
+
+.pricerange .fa {
+	color: black;
+	margin-top: 9px;
+	position: relative;
+	right: -9px;
+}
+
+.col-12.zeropadd.row.margin_5px {
+	margin: 5px 0px !important;
+}
+
+/* ==========================================================================
+   Contact US Page
+   ========================================================================== */
+
+
+.boxing > .adjustwidth {
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	max-width: 45%;
+	width: 100%;
+	margin-left: 30px;
+}
+
+.list {
+	padding: 0;
+	list-style: none;
+}
+
+
+/* ==========================================================================
+   About Us Page
+   ========================================================================== */
+
+
+.aboutus h4 {
+	margin: 10px 0px;
+}
+
+.masonry.mansoryitem ul {
+	padding: 0;
+	list-style: none;
+	display: block;
+}
+
+.masonry.mansoryitem ul li:first-child {
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	margin: 10px 0px;
+	width: 50%;
+	float: left;
+}
+
+.masonry.mansoryitem ul li:last-child {
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	margin: 10px 0px;
+	width: 50%;
+	float: right;
+}
+
+
+.masonry { /* Masonry container */
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+	-webkit-column-gap: 1em;
+	-moz-column-gap: 1em;
+	column-gap: 1em;
+	margin: 0px;
+	padding: 0;
+	-moz-column-gap: 1.5em;
+	-webkit-column-gap: 1.5em;
+	column-gap: 1.5em;
+	font-size: .85em;
+}
+
+.item {
+	display: inline-block;
+	background: #fff;
+	padding: 10px;
+	margin: 0 0 1.5em;
+	width: 100%;
+	-webkit-transition: 1s ease all;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.item img {
+	max-width: 100%;
+}
+
+.masonry.mansoryitem p {
+	text-align: center;
+	color: #616161;
+	margin: 10px;
+	margin-top: 0px;
+}
+
+.masonry.mansoryitem ul li a {
+	color: #616161;
+}
+
+/* ==========================================================================
+   faq  Page
+   ========================================================================== */
+
+.faqs .card-header {
+	padding: 0px 5px;
+}
+
+.faqs a {
+	color: #000;
+	font-size: 16px;
+}
+
+.faqs a:hover {
+	color: #a46fbf;
+
+}
+
+.card-header {
+	background: #eee;
+	border-bottom: none;
+}
+
+.card-block {
+	min-height: 150px;
+	padding: 10px;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+	color: #fff;
+	text-decoration: none;
+	background-color: #fff;
+}
+
+
+/* ==========================================================================
+   faq  Page
+   ========================================================================== */
+
+.formcustom li a {
+	display: block;
+}
+
+.formcustom li {
+
+	padding: 0;
+
+}
+
+.container.formcustom > div {
+	padding: 0;
+}
+
+.formcustom #pills-tabContent {
+	background: #fff;
+	padding: 15px;
+}
+
+.formcustom #pills-tab {
+	margin-bottom: 25px !important;
+}
+
+.formcustom #pills-tab li {
+	width: 45% !important;
+	display: inline-block !important;
+}
+
+.formcustom #pills-tab li:first-child {
+	margin-left: 0px !important;
+}
+
+.formcustom #pills-tab li:last-child {
+	margin-right: 0px !important;
+}
+
+.custom-button.phill.active {
+	background: black;
+}
+
+/* ==========================================================================
+   Blog  Page
+   ========================================================================== */
+
+.blog .container .row img:hover {
+	padding: unset;
+}
+
+.post-content-wrapper h2 {
+	margin: 10px 0px;
+}
+
+a {
+	color: #616161;
+}
+
+a:hover {
+	color: #8fb249;
+}
+
+.meta a {
+	margin-right: 20px;
+}
+
+.meta {
+	margin: 10px 0px;
+}
+
+.entry-summary {
+	background: #fff;
+	padding: 10px;
+}
+
+.entry-summary p {
+	margin: 10px 0px;
+}
+
+.post-thumb img {
+	width: 100%;
+}
+
+.share-items i {
+	font-size: 30px;
+}
+
+.share-items {
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+}
+
+.comments-list {
+	padding: 0;
+	list-style: none;
+}
+
+.comment-box ul {
+	list-style: none;
+}
+
+.comment-box h3 {
+	margin: 10px 0px;
+}
+
+.bglighter {
+	background: #f2f2f2e8;
+	padding: 15px;
+}
+
+.bglighter-2 {
+	padding: 15px;
+}
+
+.meta .fa-facebook-official {
+	color: #3F5C9A;
+}
+
+.meta .fa-twitter {
+	color: #28AAE1;
+}
+
+.meta .fa-whatsapp {
+	color: #2DB742;
+}
+
+.meta .fa-instagram {
+	color: #FF8F17;
+}
+
+.meta .fa-pinterest {
+	color: #BD081C;
+}
+
+.meta .fa:hover {
+	color: #8fb249;
+}
+
+.m-10 {
+	margin: 10px 0px;
+}
+
+.page-item.float-right {
+	width: 150px;
+	text-align: center;
+}
+
+.page-item.float-left {
+	width: 150px;
+	text-align: center;
+}
+
+.add-box img {
+	width: 100%;
+}
+
+.posts-list {
+	padding: 0;
+	list-style: none;
+}
+
+.posts-list li {
+	background: #fff;
+	margin: 10px 0px;
+	padding: 10px;
+}
+
+.posts-list li:first-child {
+
+	margin-top: 0px;
+}
+
+.widget-content span {
+	display: block;
+	font-size: 12px;
+}
+
+.widget-content span i {
+
+	margin-right: 5px;
+}
+
+.widget-content a {
+	font-size: 14px;
+}
+
+.widget-thumb img {
+	max-width: 100%;
+	object-fit: contain;
+}
+
+
+/* ==========================================================================
+   Dashboard  Page
+   ========================================================================== */
+
+
+.max-width-50px {
+	max-width: 50px;
+}
+
+.imagedrops .nav-link {
+	padding: 0;
+	margin: 0;
+	padding-right: 4px !important;
+}
+
+.imagedrops {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+
+.upload-btn input {
+	display: none;
+}
+
+.img-upload {
+	max-width: 80px;
+	float: right;
+}
+
+.upload-btn {
+	float: left;
+	margin: 23px;
+}
+
+.marginforradio input {
+	margin-right: 15px;
+	margin-left: 5px;
+}
+
+.sizetextarea {
+	height: 200px;
+}
+
+.user img {
+	max-width: 101px;
+
+}
+
+.usercontent h3 {
+	font-size: 17px;
+}
+
+.username em {
+	font-size: 12px;
+}
+
+.navdashboard ul {
+	padding: 0;
+	list-style: none;
+}
+
+.admin-box .user {
+	float: left;
+	width: 100%;
+	padding: 30px 20px;
+	position: relative;
+	margin-bottom: 0;
+	background: #000;
+}
+
+.username {
+	color: #fff;
+}
+
+.navdashboard {
+	background: #3c3241;
+	float: left;
+	width: 100%;
+	padding: 0px 20px;
+}
+
+.username.colorcodebage {
+	text-align: center;
+	background: #BB7FDB;
+	color: #fff;
+}
+
+.navdashboard li {
+	padding: 10px 0px;
+	border-bottom: 1px solid #fff;
+}
+
+.topupset {
+	width: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+	max-width: 250px;
+}
+
+.customsize {
+	text-align: center;
+	position: relative;
+	top: -119px;
+	z-index: 99;
+	margin-bottom: -152px;
+}
+
+.navdashboard a {
+	color: #fff;
+}
+
+.navdashboard a:hover {
+	color: #8fb249;
+}
+
+.username.colorcodebage h3 {
+	margin: 0;
+	padding: 10px;
+}
+
+.bannercoveruser {
+	object-fit: cover;
+	height: 236px;
+	width: 100%;
+	object-position: center bottom;
+}
+
+.coverimage {
+	position: relative;
+}
+
+.background_white {
+	background: #fff;
+	padding: 10px 20px;
+}
+
+
+.wrappingrow img {
+	max-width: 100px;
+}
+
+.borderingnew {
+	border: 1px solid #ccc;
+	padding: 10px 5px;
+}
+
+.wrappingrow.borderingnew {
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.margintadjst {
+	margin-top: 8px;
+}
+
+.wrappingrow {
+	border: 1px solid #ccc;
+	margin: 10px 0px;
+	padding: 10px 5px;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.cardtag .fa-star {
+	color: #a46fbf;
+}
+
+.cardtag .fa-star-half-o {
+	color: #a46fbf;
+}
+
+.cardtag .fa-star-o {
+	color: #a46fbf;
+}
+
+.cardtag .fa-list-alt {
+	color: #3c3241;
+}
+
+.cardtag i {
+	margin: 5px;
+}
+
+.btns-actions a {
+	font-size: 16px;
+}
+
+.btns-actions a:first-child {
+	font-size: 16px;
+}
+
+.btns-actions a {
+	display: block;
+}
+
+
+.uploadingsmultiple {
+	text-align: center;
+	border: 1px solid #cccc;
+	padding: 55px;
+}
+
+.uploadingsmultiple label {
+	margin: 0;
+}
+
+
+.boxwedigt {
+	padding: 20px;
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	font-size: 14px;
+	border: 1px solid #ccc;
+}
+.recentadsright span.col-6 {
+	padding: 0;
+	float: left;
+	margin: 5px 0px;
+}
+
+.boxwedigt button {
+	width: 100px;
+}
+
+.height-adjust img {
+	max-height: 413px;
+	object-fit: contain;
+}
+.coloring i {
+	font-size: 60px;
+	color: rgba(0,0,0,0.6);
+	font-weight: 100;
+	background: #fff;
+	padding: 10px;
+}
+.first-height .boxwedigt:first-child {
+	margin-top: 0px;
+}
+.boxwedigt .custom-button {
+	display: block;
+	color: #fff !important;
+	cursor: pointer;
+}
+.boxwedigt.margin_10px h4 {
+	margin: 0;
+}
+.styleh2.karma.margin_10px {
+	padding: 0;
+}
